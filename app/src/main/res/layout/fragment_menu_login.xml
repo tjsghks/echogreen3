@@ -8,35 +8,50 @@
     android:background="#E6F1E6"
     android:padding="8dp">
     <LinearLayout
-        android:id="@+id/loginBefore"
+        android:id="@+id/loginAfter"
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:orientation="vertical"
+        android:orientation="horizontal"
         android:background="#E6F1E6"
         >
-
         <ImageView
-
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/logoutBtn"
+            android:src="@drawable/logout"
+            app:tint="#888" />
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/loginbig"
-            android:background="#E6F1E6"
-            />
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/login_title"
-            android:layout_width="match_parent"
-            android:layout_height="61dp"
-            android:layout_marginRight="50dp"
-            android:layout_marginLeft="50dp"
-            android:background="@drawable/background"
-            android:gravity="center"
-            android:text="로그인"
-            android:textSize="30dp"
-            android:textStyle="bold"
-            android:clickable="true"
+            <ImageView
 
-            />
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/userdefault"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:gravity="center"
+                android:text="이름"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:gravity="center"
+                android:text="내 포인트"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
