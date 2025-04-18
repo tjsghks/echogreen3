@@ -20,17 +20,16 @@ public class MainActivity extends AppCompatActivity {
 
         bottomNavigationView.setOnItemSelectedListener(item -> {
             Fragment selectedFragment = null;
-//            switch (item.getItemId()) {
-//                case R.id.menu_shop:
-//                    selectedFragment = new ShopFragment();
-//                    break;
-//                case R.id.menu_home:
-//                    selectedFragment = new HomeFragment();
-//                    break;
-//                case R.id.menu_menu:
-//                    selectedFragment = new MenuFragment();
-//                    break;
-//            }
+            if(item.getItemId()==R.id.menu_menu){
+                selectedFragment = new MenuFragment();
+
+            } else if (item.getItemId()==R.id.menu_shop) {
+                selectedFragment = new ShopFragment();
+            } else if (item.getItemId()==R.id.menu_home) {
+                selectedFragment = new HomeFragment();
+
+            }
+
 
             if (selectedFragment != null) {
                 FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
