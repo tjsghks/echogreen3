@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
         bottomNavigationView.setOnItemSelectedListener(item -> {
             Fragment selectedFragment = null;
-            if(item.getItemId()==R.id.menu_menu){
+            if(item.getItemId()==R.id.menuic){
                 selectedFragment = new MenuFragment();
 
             } else if (item.getItemId()==R.id.menu_shop) {
