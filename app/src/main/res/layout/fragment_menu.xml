@@ -48,9 +48,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp">
 
-        <android.widget.Button>
 
-        </android.widget.Button>
         <LinearLayout
             android:id="@+id/menu_record"
             android:layout_width="match_parent"
